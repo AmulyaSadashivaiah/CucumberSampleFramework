@@ -5,8 +5,11 @@ import org.testng.annotations.DataProvider;
 import io.cucumber.testng.AbstractTestNGCucumberTests;
 import io.cucumber.testng.CucumberOptions;
 
-@CucumberOptions(features="src\\test\\java\\features",glue="stepDefinitions",monochrome=true,tags="@PlaceOrder or @SearchProduct"
-                 , plugin= {"com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:","rerun:target/failed_scenario.txt"})
+@CucumberOptions(features="src\\test\\java\\features",glue="stepDefinitions"
+                 ,monochrome=true
+                 ,tags="@PlaceOrder or @SearchProduct"
+                 , plugin= {"com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:",
+"rerun:target/failed_scenario.txt"})
 public class TestNGTestRunner extends AbstractTestNGCucumberTests{
 
 	@Override

@@ -24,8 +24,8 @@ public class BaseTest {
 		FileInputStream fis = new FileInputStream(System.getProperty("user.dir") + "\\src\\test\\resources\\global.properties");
 		Properties prop = new Properties();
 		prop.load(fis);
-		String url = System.getProperty("browser")!=null ? System.getProperty("browser") :prop.getProperty("QAurl");
-		String browserName = prop.getProperty("browser");
+		String url = prop.getProperty("QAurl");
+		String browserName = System.getProperty("browser")!=null ? System.getProperty("browser") : prop.getProperty("browser");
 
 		if (driver == null) 
 		{
