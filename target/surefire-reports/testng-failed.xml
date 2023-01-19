@@ -10,13 +10,6 @@
           <include name="tearDownClass"/>
         </methods>
       </class> <!-- cucumberOptns.TestNGTestRunner -->
-      <class name="cucumberOptns.FailedTestRunnerTests">
-        <methods>
-          <include name="setUpClass"/>
-          <include name="runScenario" invocation-numbers="0"/>
-          <include name="tearDownClass"/>
-        </methods>
-      </class> <!-- cucumberOptns.FailedTestRunnerTests -->
     </classes>
   </test> <!-- Surefire test(failed) -->
 </suite> <!-- Failed suite [Surefire suite] -->

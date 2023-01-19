@@ -9,7 +9,7 @@ import io.cucumber.testng.CucumberOptions;
                  ,monochrome=true
                  ,tags="@PlaceOrder or @SearchProduct"
                  , plugin= {"com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:",
-"rerun:target/failed_scenario.txt"})
+                 "rerun:target/failed_scenario.txt"})
 public class TestNGTestRunner extends AbstractTestNGCucumberTests{
 
 	@Override

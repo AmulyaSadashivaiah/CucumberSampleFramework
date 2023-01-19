@@ -25,7 +25,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -92,7 +92,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">4 methods, 2 failed,   2 passed</span>
+                    <span class="method-stats">3 methods, 1 failed,   2 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title failed">Failed methods</span>
@@ -104,11 +104,6 @@
                       <span>
                         <img src="failed.png" width="3%"/>
                         <a href="#" panel-name="suite-Surefire_suite" title="cucumberOptns.TestNGTestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;search for the product&quot;, &quot;Search and place the order for Products&quot;)">runScenario("search for the product", "Search and place the order for Products")</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Surefire_suite" title="cucumberOptns.FailedTestRunnerTests" class="method navigator-link" hash-for-method="runScenario(&quot;search for the product&quot;, &quot;Search and place the order for Products&quot;)">runScenario("search for the product", "Search and place the order for Products")</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content failed suite-Surefire_suite -->
@@ -146,29 +141,6 @@
             <div class="main-panel-header rounded-window-top">
               <img src="failed.png"/>
               <span class="class-name">cucumberOptns.TestNGTestRunner</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="runScenario(&quot;search for the product&quot;, &quot;Search and place the order for Products&quot;)">
-                  </a> <!-- runScenario("search for the product", "Search and place the order for Products") -->
-                  <span class="method-name">runScenario</span>
-                  <span class="parameters">("search for the product","Search and place the order for Products")</span>
-                  <div class="stack-trace">java.lang.AssertionError: expected [No data] but found [Beetroot]
-	at stepDefinitions.OffersPageStepDefinitions.validate_this_product_name_in_offers_page_matches_with_Landing_page(OffersPageStepDefinitions.java:63)
-	at ✽.Validate this product name in offers page matches with Landing page(file:///C:/Users/bsamu/EclipseCucumber/CucumberAutomation/src/test/java/features/searchProduct.feature:8)
-... Removed 6 stack frames
-</div> <!-- stack-trace -->
-                  <em>
-(Runs Cucumber Scenarios)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Surefire_suite-class-failed -->
-          <div class="suite-Surefire_suite-class-failed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
-              <span class="class-name">cucumberOptns.FailedTestRunnerTests</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
@@ -227,7 +199,6 @@
 &lt;suite thread-count=&quot;1&quot; name=&quot;Surefire suite&quot; verbose=&quot;0&quot;&gt;
   &lt;test thread-count=&quot;1&quot; name=&quot;Surefire test&quot; verbose=&quot;0&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;cucumberOptns.FailedTestRunnerTests&quot;/&gt;
       &lt;class name=&quot;cucumberOptns.TestNGTestRunner&quot;/&gt;
       &lt;class name=&quot;utils.BaseTest&quot;/&gt;
       &lt;class name=&quot;utils.TestContextSetup&quot;/&gt;
@@ -244,7 +215,7 @@
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Surefire test (4 classes)</span>
+                <span class="test-name">Surefire test (3 classes)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -278,28 +249,24 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(4);
+data.addRows(3);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'runScenario')
 data.setCell(0, 2, 'cucumberOptns.TestNGTestRunner')
-data.setCell(0, 3, 11850);
+data.setCell(0, 3, 14557);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'runScenario')
 data.setCell(1, 2, 'cucumberOptns.TestNGTestRunner')
-data.setCell(1, 3, 11649);
+data.setCell(1, 3, 14477);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'runScenario')
 data.setCell(2, 2, 'cucumberOptns.TestNGTestRunner')
-data.setCell(2, 3, 11321);
-data.setCell(3, 0, 3)
-data.setCell(3, 1, 'runScenario')
-data.setCell(3, 2, 'cucumberOptns.FailedTestRunnerTests')
-data.setCell(3, 3, 6190);
+data.setCell(2, 3, 14435);
 window.suiteTableData['Surefire_suite']= { tableData: data, tableDiv: 'times-div-Surefire_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 41 seconds</span>
+              <span class="suite-total-time">Total running time: 43 seconds</span>
               <div id="times-div-Surefire_suite">
               </div> <!-- times-div-Surefire_suite -->
             </div> <!-- times-div -->
@@ -325,45 +292,28 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">cucumberOptns.FailedTestRunnerTests</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">cucumberOptns.TestNGTestRunner</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
-                <span class="method-name">setUpClass(org.testng.TestRunner@392a04e7)</span>
+                <span class="method-name">setUpClass(org.testng.TestRunner@79767781)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">runScenario("search for the product", "Search and place the order for Products")</span>
-                <span class="method-start">652 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-class after">
-                <span class="method-name">tearDownClass</span>
-                <span class="method-start">6851 ms</span>
-              </div> <!-- configuration-class after -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">cucumberOptns.TestNGTestRunner</div> <!-- chronological-class-name -->
-              <div class="configuration-class before">
-                <span class="method-name">setUpClass(org.testng.TestRunner@392a04e7)</span>
-                <span class="method-start">7342 ms</span>
-              </div> <!-- configuration-class before -->
-              <div class="test-method">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">runScenario("search for the product", "Search and place the order for Products")</span>
-                <span class="method-start">7400 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">runScenario("search for the product", "Search and place the order for Products")</span>
-                <span class="method-start">7400 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
                 <span class="method-name">runScenario("Order the parameterized product and validate", "Order Product")</span>
-                <span class="method-start">7401 ms</span>
+                <span class="method-start">722 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("search for the product", "Search and place the order for Products")</span>
+                <span class="method-start">722 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">runScenario("search for the product", "Search and place the order for Products")</span>
+                <span class="method-start">722 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">tearDownClass</span>
-                <span class="method-start">19253 ms</span>
+                <span class="method-start">15289 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
