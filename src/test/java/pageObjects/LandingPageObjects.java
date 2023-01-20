@@ -78,7 +78,10 @@ public class LandingPageObjects extends AbstractComponents{
 	
 	
 	
-	
+	public String getTitleOfPage()
+	{
+		return driver.getTitle();
+	}
 	
 	
 	

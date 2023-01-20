@@ -37,8 +37,8 @@ public class LandingPageStepDefinitions {
 	
 	@Given("User is in landing page")
 	public void user_is_in_landing_page() throws IOException {
-		Assert.assertTrue(testContextSetup.baseTest.webDriverMgr().getTitle().contains("GreenKart"));
-		System.out.println(testContextSetup.baseTest.webDriverMgr().getTitle().contains("GreenKart"));
+		Assert.assertTrue(landingPageObjects.getTitleOfPage().contains("GreenKart"));
+		System.out.println(landingPageObjects.getTitleOfPage().contains("GreenKart"));
 	}
 	
 	

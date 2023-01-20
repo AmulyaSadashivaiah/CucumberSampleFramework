@@ -8,8 +8,9 @@ import io.cucumber.testng.CucumberOptions;
 @CucumberOptions(features="src\\test\\java\\features",glue="stepDefinitions"
                  ,monochrome=true
                  ,tags="@PlaceOrder or @SearchProduct"
-                 , plugin= {"com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:",
-                 "rerun:target/failed_scenario.txt"})
+                 , plugin= {"html:target/cucumber.html","com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:",
+                   "rerun:target/failed_tests.txt"})
+
 public class TestNGTestRunner extends AbstractTestNGCucumberTests{
 
 	@Override
