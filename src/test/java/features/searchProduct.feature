@@ -10,4 +10,4 @@ And Validate this product name in offers page matches with Landing page
 Examples: 
 |Name |
 |Tom  | 
-|Beet |
+|Car |

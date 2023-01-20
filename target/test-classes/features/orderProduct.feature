@@ -13,4 +13,4 @@ And Validated Apply and Place order button
 Examples:
 
 |Name|
-|Car|
+|Beet|
